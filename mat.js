@@ -63,6 +63,7 @@ $.getJSON(url, function (json) {
         var urlyoutube = urlyoutube.replace('https://youtu.be/', '');
         var urlyoutube = urlyoutube.replace('https://www.youtube.com/watch?v=', '');
         var html_yt = `
+        <div class="col-lg-6 col-md-12">
                 <div class="card mt-2 mb-2 border-success" id="` + id + `">
                     <div class="vplayer" data-v="` + urlyoutube + `">
                         <div class="plybtn"></div>
@@ -89,6 +90,7 @@ $.getJSON(url, function (json) {
                         </div>
                     </div>
                 </div>
+           </div>
 `
         str1 += html_yt;
 
