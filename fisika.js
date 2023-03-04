@@ -12,7 +12,7 @@
 
             var syiardeskripsi = document.getElementById('deskripsi_' + syiarke).textContent;
 
-            var syiarurl = document.getElementById('urlyoutube_' + syiarke).href;
+            var syiarurl = document.getElementById('linkyoutube_' + syiarke).href;
 
 
 
