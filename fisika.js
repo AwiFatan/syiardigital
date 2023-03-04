@@ -1,4 +1,3 @@
-
         function af(clicked_id) {
             var xxx = clicked_id.replace(/_/g, ',');
             var xxx = xxx.split(',');
@@ -6,32 +5,22 @@
             var socmed = xxx[0];
             var syiarke = xxx[1];
 
-            // var socmed = "whatsapp"; //untuk test
-            // var syiarke = "1"; //untuk test
 
-            var syiarpelajaran = document.getElementById('pelajaran_' + syiarke).textContent;
-            var syiarkelas = document.getElementById('kelas_' + syiarke).textContent;
-            var syiarbab = document.getElementById('bab_' + syiarke).textContent;
             var syiarjudul = document.getElementById('judul_' + syiarke).textContent;
             syiarjudul = syiarjudul.trim()
 
-            var syiarsubbab = document.getElementById('subbab_' + syiarke).textContent;
-            var syiarketerangan = document.getElementById('keterangan_' + syiarke).textContent;
+
             var syiardeskripsi = document.getElementById('deskripsi_' + syiarke).textContent;
 
             var syiarurl = document.getElementById('urlyoutube_' + syiarke).href;
 
-            // var syiarbersama = document.getElementById('judul_' + syiarke).textContent;
 
-            // alert(syiarjudul)
-            // alert(syiardeskripsi)
-            // alert(syiarurl)
 
-            quoteFBandTweet = syiarjudul + '%0A%0A' + syiarsubbab + '%0A%0A' + syiarketerangan;
+            quoteFBandTweet = syiarjudul + '%0A%0A'  + syiardeskripsi;
             quoteFBpanjang = quoteFBandTweet.length;
-            quoteWA = '*' + syiarjudul + '*%0A%0A' + syiarsubbab + '%0A%0A' + syiarketerangan + '%0A%0A' + syiarurl;
-            quoteTele = '**' + syiarjudul + '**%0A%0A' + syiarsubbab + '%0A%0A' + syiarketerangan + '%0A%0A' + syiarurl;
-            quoteCopy = syiarjudul + '\n\n' + syiarsubbab + '\n\n' + syiarketerangan + '\n\n' + syiarurl;
+            quoteWA = '*' + syiarjudul + '*%0A%0A' + syiardeskripsi + '%0A%0A' + syiarurl;
+            quoteTele = '**' + syiarjudul + '**%0A%0A' + syiardeskripsi + '%0A%0A' + syiarurl;
+            quoteCopy = syiarjudul +  '\n\n' + syiardeskripsi + '\n\n' + syiarurl;
             switch (socmed) {
                 case 'facebook':
                     if (quoteFBandTweet.length <= 400) {
@@ -79,6 +68,11 @@
             }
 
         }
+   
+  
+
+
+// =======================
 
         var script_url =
             "https://script.google.com/macros/s/AKfycbxmIuhVb5TtzND736q0eSYrZd7SCH2qsMljJyhlh_82DU7Kyls-1DBCsFhspz_aYVST1g/exec";
