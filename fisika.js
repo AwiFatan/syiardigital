@@ -166,7 +166,7 @@
                         var iframe =`
                         <div class='text-center'>
                             <div class="video">
-                                <iframe width="270" height="480"
+                                <iframe width="100%" height="100%"
                                     src="`+srcyoutube+`" frameborder="1"
                                     allowfullscreen></iframe>
                             </div>
