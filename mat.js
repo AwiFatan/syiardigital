@@ -8,8 +8,6 @@ $.getJSON(url, function (json) {
     var pilih_tugas = [];
     for (var i = 0; i < json.records.length; i++) {
         var tipe = json.records[i].tipe;
-        console.log("tipe :" + tipe)
-
         switch (tipe) {
             case "bank soal":
                 pilih_banksoal.push(i);
@@ -62,10 +60,8 @@ $.getJSON(url, function (json) {
 
         }
 
-        // `++`  <span id="`++`">`++`</span>    ` +   + j+". "  + bab + ` | ` + kelas + ` | ` + pelajaran + `
         var urlyoutube = urlyoutube.replace('https://youtu.be/', '');
         var urlyoutube = urlyoutube.replace('https://www.youtube.com/watch?v=', '');
-
         var html_yt = `
                 <div class="card mt-2 mb-2 border-success" id="` + id + `">
                     <div class="vplayer" data-v="` + urlyoutube + `">
@@ -104,9 +100,6 @@ $.getJSON(url, function (json) {
 
 });
 
-/*     <iframe loading="lazy" width="450" height="300" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/` +
-  kambing[i].youtube + `"></iframe>
-   */
 
 function wait(ms) {
     return new Promise(r => setTimeout(r, ms));
@@ -121,7 +114,7 @@ async function iframeyoutube() {
     for (var i = 0; i < vplayer.length; i++) {
         // console.log(vplayer[i].dataset.v);
         var source = "https://img.youtube.com/vi/" + vplayer[i].dataset.v + "/maxresdefault.jpg";
-        //   maxresdefault.jpg
+        // maxresdefault.jpg
         // sddefault.jpg
         // mqdefault.jpg
         // hqdefault.jpg
