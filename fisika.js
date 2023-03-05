@@ -88,7 +88,7 @@
                 console.log("tipe :" + tipe)
 
                 switch (tipe) {
-                    case "bank soal":
+                    case "soal":
                         pilih_banksoal.push(i);
                         break;
                     case "tugas":
